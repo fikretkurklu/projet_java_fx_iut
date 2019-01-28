@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="400.0" prefWidth="600.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.FenetreMenuJeu">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+
+    <children>
+        <VBox alignment="TOP_CENTER" GridPane.rowIndex="0">
+            <children>
+                <HBox>
+                    <Label text="Nom Joueur : " />
+                    <Label text="${controller.joueur.nomJoueur}" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                </HBox>
+
+                <HBox>
+                    <Label text="Meilleur score : " />
+                    <Label text="${controller.joueur.meilleurScore}" GridPane.columnIndex="1" />
+                </HBox>
+
+                <HBox>
+                    <Label text="Argent : " GridPane.rowIndex="1" />
+                    <Label text="${controller.joueur.argent}" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                </HBox>
+            </children>
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
+        </VBox>
+
+        <Button fx:id="buttonStart" mnemonicParsing="false" onAction="#handleStartJeu" prefHeight="46.0" prefWidth="148.0" text="Start" GridPane.rowIndex="1" />
+        <Button fx:id="buttonShop" mnemonicParsing="false" onAction="#handleShop" prefHeight="48.0" prefWidth="147.0" text="Shop" GridPane.rowIndex="2" />
+        <Button fx:id="buttonQuit" mnemonicParsing="false" onAction="#handleQuit" prefHeight="43.0" prefWidth="146.0" text="Quit" GridPane.rowIndex="3" />
+        <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#handleSave" prefHeight="47.0" prefWidth="146.0" text="Sauvegarder" GridPane.rowIndex="4" />
+      <Button fx:id="buttonArgent" mnemonicParsing="false" onAction="#handleArgent" prefHeight="43.0" prefWidth="147.0" text="Cheat argent" GridPane.rowIndex="5" />
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

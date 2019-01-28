@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="10.0.2" class="java.beans.XMLDecoder">
+ <object class="model.Joueur">
+  <void property="argent">
+   <int>44</int>
+  </void>
+  <void property="avion">
+   <object class="model.AvionChasse" id="AvionChasse0">
+    <void property="prix">
+     <int>50</int>
+    </void>
+    <void property="vitesseDeTir">
+     <int>10</int>
+    </void>
+    <void id="Integer0" property="pointDeVie"/>
+   </object>
+  </void>
+  <void property="currentDate">
+   <long>1548104324108</long>
+  </void>
+  <void property="dateTir">
+   <long>1548104315525</long>
+  </void>
+  <void property="listAvionPosseder">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object idref="AvionChasse0"/>
+    </void>
+   </object>
+  </void>
+  <void property="listProjectile">
+   <object class="java.util.ArrayList"/>
+  </void>
+  <void property="meilleurScore">
+   <int>8</int>
+  </void>
+  <void property="nomJoueur">
+   <string>Fikret</string>
+  </void>
+  <void property="positionX">
+   <object idref="Integer0"/>
+  </void>
+  <void property="positionY">
+   <object idref="Integer0"/>
+  </void>
+  <void property="vitesseEntite">
+   <int>4</int>
+  </void>
+ </object>
+</java>
